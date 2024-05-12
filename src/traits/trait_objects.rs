@@ -29,19 +29,21 @@ impl Vehicle {
 impl Refill for Player {
 	fn refill(&mut self) {
 		self.healt_points = Self::MAX_HEALTH;
+		println!("self.healt_ponits => {}", self.healt_points)
 	}
 }
 
 impl Refill for MagicWand {
 	fn refill(&mut self) {
 		self.magic_points = Self::MAX_MAGIC;
+		println!("self.magic_ponits => {:?}", self.magic_points)
 	}
 }
 
 impl Refill for Vehicle {
 	fn refill(&mut self) {
 		self.fuel_remaining = Self::MAX_FUEL;
-		println!("{}", self.fuel_remaining);
+		println!("self.fuel_remaining => {}", self.fuel_remaining);
 	}
 }
 
