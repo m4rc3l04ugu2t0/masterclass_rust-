@@ -2,6 +2,7 @@ mod controle;
 mod funcoes;
 mod fundamentos;
 mod generics;
+mod operator_overloading;
 mod ownership;
 mod tipos;
 mod traits;
@@ -20,6 +21,7 @@ fn main() {
 			"Ownership",
 			"Traits",
 			"Generics",
+			"Operator Overloading",
 		];
 		let selected = show_menu("Principal", &items, true);
 
@@ -33,6 +35,7 @@ fn main() {
 			5 => ownership::execute(),
 			6 => traits::execute(),
 			7 => generics::execute(),
+			8 => operator_overloading::execute(),
 			_ => exit(0),
 		}
 	}
